@@ -1,6 +1,6 @@
-# GetFullAddressByZipCodeOnBrazil ![CI status](https://img.shields.io/badge/build-passing-brightgreen.svg)
+# GetFullAddressByZipCodeInBrazil ![CI status](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
-GetFullAddressByZipCodeOnBrazil is a Python function that pass a input parameter (brazilian zip code) and get full address. The search is did on Correios official website.
+GetFullAddressByZipCodeInBrazil is a Python function that pass a input parameter (brazilian zip code) and get full address. The search is did on Correios official website.
 
 ## Motivation
 
@@ -18,17 +18,17 @@ I developed this function because I did need to get full address to cleaning/adj
 	cd /home/your_username/
 
 3 - Clone the github repository:
-	git clone https://github.com/daniellj/GetFullAddressByZipCodeOnBrazil
+	git clone https://github.com/daniellj/GetFullAddressByZipCodeInBrazil
 
 4 - Access the new folder created:
-	cd GetFullAddressByZipCodeOnBrazil/
+	cd GetFullAddressByZipCodeInBrazil/
 
 5 - Install the dependencies (Python Libraries):
 	pip install -r requirements.txt
 
 ## Usage
 1 - Call de function from the linux terminal command line:
-	python -c 'import GetFullAddressByZipCodeOnBrazil as gt; print(gt.GetFullAddressByZipCodeOnBrazil("INPUT_ZIPCODE_TO_SEARCH"))'
+	python -c 'import GetFullAddressByZipCodeInBrazil as gt; print(gt.GetFullAddressByZipCodeInBrazil("INPUT_ZIPCODE_TO_SEARCH"))'
 
 The return is a python list, containing, in order, the following informations:
 
