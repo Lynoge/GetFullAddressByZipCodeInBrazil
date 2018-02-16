@@ -18,7 +18,7 @@ I developed this function because I did need to get full address to cleaning/adj
 	cd /home/your_username/
 
 3 - Clone the github repository:
-	git clone https://github.com/daniellj/c
+	git clone https://github.com/daniellj/GetFullAddressByZipCodeOnBrazil
 
 4 - Access the new folder created:
 	cd GetFullAddressByZipCodeOnBrazil/
