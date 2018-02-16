@@ -23,7 +23,7 @@ I developed this function because I did need to get full address to cleaning/adj
 4 - Access the new folder created:
 	cd GetFullAddressByZipCodeOnBrazil/
 
-5 - Install the Dependencies: Python Libraries
+5 - Install the dependencies (Python Libraries):
 	pip install -r requirements.txt
 
 ## Usage
