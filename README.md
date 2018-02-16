@@ -28,7 +28,7 @@ I developed this function because I did need to get full address to cleaning/adj
 
 ## Usage
 1 - Call de function from the linux terminal command line:
-	python -c 'import GetFullAddressByZipCodeOnBrazil as gt; print(gt.GetFullAddressByZipCodeOnBrazil("22793012"))'
+	python -c 'import GetFullAddressByZipCodeOnBrazil as gt; print(gt.GetFullAddressByZipCodeOnBrazil("INPUT_ZIPCODE_TO_SEARCH"))'
 
 The return is a python list, containing, in order, the following informations:
 
