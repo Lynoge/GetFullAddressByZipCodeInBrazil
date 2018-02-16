@@ -6,7 +6,7 @@
 from bs4 import BeautifulSoup
 import requests
 
-def GetFullAddressByZipCodeOnBrazil(zipcode):
+def GetFullAddressByZipCodeInBrazil(zipcode):
     '''
     Passa como valor de entrada um CEP (string), onde o mesmo é consultado no site dos correios. A saída é através de uma
     lista com as informações do CEP consultado: 'Logradouro/Nome','Bairro/Distrito','Cidade', 'Estado','CEP'.
