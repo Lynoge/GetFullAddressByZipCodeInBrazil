@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Autor: Daniel Lessa Januário
+# Autor: Daniel L.J.
 # E-mail: daniellessa.j@gmail.com
 
 from bs4 import BeautifulSoup
 import requests
 
-def SearchAddressByCEPonBrazil(cep):
+def GetFullAddressByZipCodeOnBrazil(zipcode):
     '''
     Passa como valor de entrada um CEP (string), onde o mesmo é consultado no site dos correios. A saída é através de uma
     lista com as informações do CEP consultado: 'Logradouro/Nome','Bairro/Distrito','Cidade', 'Estado','CEP'.
@@ -15,9 +15,9 @@ def SearchAddressByCEPonBrazil(cep):
     htmltable=None
     listainfo=[]
     
-    if (isinstance(cep, str) and len(cep)==8 and cep is not None): #veriifcações iniciais
+    if (isinstance(zipcode, str) and len(zipcode)==8 and zipcode is not None): #veriifcações iniciais
         urlconsulta = 'http://www.buscacep.correios.com.br/sistemas/buscacep/resultadoBuscaCepEndereco.cfm'
-        carga = {'relaxation': cep, 'tipoCEP': 'ALL', 'semelhante': 'N'}
+        carga = {'relaxation': zipcode, 'tipoCEP': 'ALL', 'semelhante': 'N'}
         resp = requests.post(urlconsulta, data=carga)
     
     if resp is not None:
